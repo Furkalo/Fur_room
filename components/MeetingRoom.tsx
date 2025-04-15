@@ -3,7 +3,6 @@ import { useState } from "react";
 import {
   CallControls,
   CallParticipantsList,
-  CallStatsButton,
   CallingState,
   PaginatedGridLayout,
   SpeakerLayout,
