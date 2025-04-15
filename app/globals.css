@@ -14,68 +14,77 @@
   position: relative;
 }
 
+.bg-dark-1 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(49, 49, 52);
+}
+.bg-dark-2 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0, 0, 0);
+}
+
 .str-video__speaker-layout__wrapper {
   max-height: 700px;
 }
 
-.str-video__participant-details {
-  color: white;
-}
-
-.str-video__menu-container {
-  color: white;
-}
-
+.str-video__participant-details,
+.str-video__menu-container,
 .str-video__notification {
-  color: white;
+  color: #ffffff;
 }
 
 .str-video__participant-list {
-  background-color: #1c1f2e;
+  background-color: #2b2d31; /* Discord-like dark gray */
   padding: 10px;
   border-radius: 10px;
-  color: white;
+  color: #ffffff;
   height: 100%;
 }
 
 .str-video__call-controls__button {
   height: 40px;
+  background-color: #5865f2; /* Discord blurple */
+  color: white;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+.str-video__call-controls__button:hover {
+  background-color: #4752c4;
 }
 
+/* ==== glassmorphism ==== */
 .glassmorphism {
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background: rgba(43, 45, 49, 0.4);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 .glassmorphism2 {
-  background: rgba(18, 17, 17, 0.25);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: rgba(18, 18, 18, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* ==== clerk class override ===== */
+/* ==== clerk override ===== */
 
-.cl-userButtonPopoverActionButtonIcon {
-  color: white;
+.cl-userButtonPopoverActionButtonIcon,
+.cl-userButtonPopoverActionButton,
+.cl-internal-wkkub3 {
+  color: #ffffff;
 }
 
 .cl-logoBox {
   height: 40px;
 }
+
 .cl-dividerLine {
-  background: #252a41;
+  background: #3e4045;
   height: 2px;
 }
 
 .cl-socialButtonsIconButton {
-  border: 3px solid #565761;
-}
-
-.cl-internal-wkkub3 {
-  color: white;
-}
-.cl-userButtonPopoverActionButton {
-  color: white;
+  border: 2px solid #5865f2;
 }
 
 .cl-providerIcon__github {
@@ -94,7 +103,7 @@
   }
 }
 
-/* animation */
+/* ==== animation ==== */
 
 .show-block {
   width: 100%;
@@ -113,4 +122,18 @@
     animation-timing-function: ease-in;
     width: 100%;
   }
+}
+
+.bg-orange-1 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(104 182 98);
+}
+
+.bg-yellow-1 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 44 14);
+}
+
+.rounded-\[14px\] {
+  border-radius: 50px;
 }
